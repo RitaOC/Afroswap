@@ -15,7 +15,8 @@ function Navbar() {
   return (
     <header>
       <div>
-        <img id="logo" src={logo} alt="Logo" />;
+        <img id="logo" src={logo} alt="Logo" />
+        <h2 className="name">AFROSWAP</h2>
       </div>
       <nav ref={navRef}>
         <a href="/#">Home</a>
