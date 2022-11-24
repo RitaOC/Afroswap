@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Navbar.css";
 import logo from "../images/Logo.PNG";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const navRef = useRef();
@@ -21,7 +22,8 @@ function Navbar() {
       <nav ref={navRef}>
         <a href="/#">Home</a>
         <a href="/#">About us</a>
-        <a href="/#">Contact</a>
+        {/* <a href="/#">Contact</a> */}
+        <Link to={"/contact"}>Contact</Link>
         <button className="wallet-connect">Connect Wallet</button>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

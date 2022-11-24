@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import frame1 from "../images/Frame1.png";
 import frame2 from "../images/Frame2.PNG";
+import { Link } from "react-router-dom";
 
 function Landing() {
   return (
@@ -24,7 +25,7 @@ function Landing() {
               <a className="swap" href="">
                 Swap Tokens
               </a>
-              <a className="learn" href="">
+              <a className="learn" href=".Topic-c">
                 Learn More
               </a>
             </div>
